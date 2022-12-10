@@ -1,0 +1,9 @@
+#Options FollowSymLinks
+#Turn the rewrite engin On
+RewriteEngine On
+
+#Rewrite for en.html - when href to en (we see it domanename/en) it's redercts to en.html and we still see /en
+RewriteRule "^en" "en.html" [L] 
+#Rewrite for indec.html
+RewriteRule "^fr" "index.html" [L] 
+#L makes this the last rule that this specific condition will match
